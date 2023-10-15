@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <section class="container">
+        <div class="project"> 
+        <h2 class="title">Qiymatni kiriting - Enter value</h2>
+        <input class="meva" type="text" placeholder="for fruits">
+        <br>
+        <button class="begin" onclick="fn()">Enter from beginning</button>
+        <button class="end"  onclick="fn2()">Enter from end</button>
+    </div>
+    <div class="result">
+        <h2 class="defoult">Default qiymatlar</h2>
+        <h5 class="result_m">olma, anor,   </h5>
+    </div>
+    </section>
+</body>
+<script src="./js/main.js"></script>
+</html>
+ <!-- Css -->
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1300px;
+}
+
+body{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.project {
+    margin: 15px auto;
+    background-color: #5ce9bf77;
+    text-align: center;
+    padding: 15px;
+}
+
+.project input {
+    width: 200px;
+    height: 40px;
+    font-size: 19px;
+    border-radius: 9px;
+    margin-left: 40px;
+    padding: 0  4px;
+    margin: 8px 0;
+    border: none;
+}
+
+.begin {
+    padding: 12px 12px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(18, 36, 201, 0.623);
+    color:  black;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.end {
+    padding: 12px 12px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(67, 206, 39, 0.808);
+    color:  black;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.result {
+    margin: 0 auto;
+    background-color:rgba(224, 200, 169, 0.404);
+    padding: 13px ;
+}
+
+
+.result_m {
+    font-size: 19px;
+    color:teal;
+    margin-left: 145px;
+}
+
+
+<!-- js -->
+var begin = document.querySelector('.begin')
+var end = document.querySelector('.end')
+var inpMeva = document.querySelector('.meva')
+var arM = document.querySelector('.result_m')
+function fn() {
+    console.log(res.value);
+}
